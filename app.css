@@ -1,0 +1,148 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: hsl(30, 38%, 92%);
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+    display: flex;
+    margin: 100px auto;
+    box-sizing: border-box;
+    border-radius: 10px;
+    overflow: hidden;
+    justify-content: center;
+}
+
+.upper {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: hsl(228, 12%, 48%);
+    margin-bottom: 0;
+}
+
+#img-cont img {
+    width: 260px;
+    height: 390px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.content {
+    width: 300px;
+    background-color: white;
+    height: 390px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+section {
+    padding: 10px 20px;
+}
+
+h1 {
+    font-family: 'Fraunces', serif;
+    font-size: 2rem;
+    margin: 15px 0;
+}
+
+p {
+    font-size: 14px;
+    line-height: 20px;
+    color: hsl(228, 12%, 48%);
+}
+
+.price-tag {
+    display: flex;
+    flex-direction: ;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.new {
+    margin: 0;
+    font-size: 26px;
+    font-family: 'Fraunces', serif;
+    color: hsl(158, 36%, 37%);
+    margin-right: 20px;
+}
+
+.del {
+    position: relative;
+    right: -30px;
+}
+
+.btn {
+    text-align: center;
+    background-color: hsl(158, 36%, 37%);
+    padding: 10px 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+}
+
+.btn:hover {
+    background-color: hsl(212, 21%, 14%);
+}
+
+.btn a {
+    text-decoration: none;
+    color: white;
+}
+
+.btn::before {
+    background: url(./images/icon-cart.svg) no-repeat;
+    content: "";
+    width: 25px;
+    height: 25px;
+    display: inline-block;
+    margin-right: 5px;
+    position: relative;
+    top: 4px;
+}
+
+footer {
+    text-align: center;
+}
+
+.attribution a{
+    text-decoration: dotted;
+    color: hsl(212, 21%, 14%);
+    font-weight: 700;
+}
+
+.attribution a:hover {
+    color: hsl(158, 36%, 37%);
+}
+
+@media screen and (max-width:531px) {
+    body{
+        display: grid;
+    }
+    .container {
+        display: block;
+    }
+
+    #img-cont {
+        height: 390px;
+        width: 360px;
+    }
+
+    #img-cont img{
+        width: 400px;
+        object-fit: cover;
+        border-bottom-left-radius: 0;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+
+    .content {
+        width: 400px;
+        border-top-right-radius: 0;
+    }
+
+    .price-tag{
+        margin-top: 40px;
+    }
+}
